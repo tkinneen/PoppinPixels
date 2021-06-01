@@ -1,43 +1,46 @@
 import React from "react";
 import * as FaIcons from "react-icons/fa";
-import * as AiIcons from "react-icons/ai";
-import * as IoIcons from "react-icons/io";
+//import * as AiIcons from "react-icons/ai";
+//import * as IoIcons from "react-icons/io";
 
 export const SidebarData = [
   {
-    title: "Home",
+    title: "Razor Claws Alien",
     path: "/",
-    icon: <AiIcons.AiFillHome />,
+    icon: <FaIcons.FaFortAwesome />,
+    /*icon: <AiIcons.AiFillHome />,*/
     cName: "nav-text",
   },
   {
-    title: "Reports",
-    path: "/reports",
-    icon: <IoIcons.IoIosPaper />,
+    title: "Atma Weapon",
+    path: "/atma",
+    icon: <FaIcons.FaFortAwesome />,
+    /*icon: <IoIcons.IoIosPaper />,*/
     cName: "nav-text",
   },
   {
-    title: "Products",
-    path: "/products",
-    icon: <FaIcons.FaCartPlus />,
+    title: "M. Bison",
+    path: "/bison",
+    icon: <FaIcons.FaFortAwesome />,
     cName: "nav-text",
   },
   {
-    title: "Team",
-    path: "/team",
-    icon: <IoIcons.IoMdPeople />,
+    title: "Golem",
+    path: "/golem",
+    icon: <FaIcons.FaFortAwesome />,
+    /*icon: <IoIcons.IoMdPeople />,*/
+    cName: "nav-text fa-fort-awesome",
+  },
+  {
+    title: "Flame Dragon",
+    path: "/mana",
+    icon: <FaIcons.FaFortAwesome />,
     cName: "nav-text",
   },
   {
-    title: "Messages",
-    path: "/messages",
-    icon: <FaIcons.FaEnvelopeOpenText />,
-    cName: "nav-text",
-  },
-  {
-    title: "Support",
-    path: "/support",
-    icon: <IoIcons.IoMdHelpCircle />,
+    title: "Triclyde",
+    path: "/triclyde",
+    icon: <FaIcons.FaFortAwesome />,
     cName: "nav-text",
   },
 ];
