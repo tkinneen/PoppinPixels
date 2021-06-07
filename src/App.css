@@ -12,6 +12,18 @@
     color: orange;
 }
 
+.container1 {
+    background-color: chartreuse;
+    height: 100vh;
+    width: 200vh;
+    display: grid;
+}
+
+.container2 {
+    background-color:firebrick;
+
+}
+
 .alien, 
 .atma,
 .triclyde,

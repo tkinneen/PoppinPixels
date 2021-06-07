@@ -5,7 +5,7 @@ function Atma() {
     let spacing = 5;
     return (
         <div className='atma'>
-            <h1 class="orange">Final Fantasy III (SNES) - Atma Weapon</h1>
+            <h1>Final Fantasy III (SNES) - Atma Weapon</h1>
             <p>
                 <img src={pixel_art} style={{marginTop: spacing + 'em'}} alt="atma" />
             </p>
