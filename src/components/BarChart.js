@@ -1,8 +1,9 @@
 import React from "react";
 import { Bar } from "react-chartjs-2";
-import { Pie } from "react-chartjs-2";
+//import { Pie } from "react-chartjs-2";
+//import { SpriteProperties } from "../pages/Alien.js";
 
-let results = {
+/*let results = {
   filename: "t.png",
   baseFilename: "t",
   originalSpriteHeight: 107,
@@ -125,9 +126,9 @@ let results = {
     8,
     4,
   ],
-};
+};*/
 
-let blackBorderColor = [];
+/*let blackBorderColor = [];
 for (var i = 0; i < results.chartColor.length; i++)
   blackBorderColor.push("rgb(0, 0, 0)");
 
@@ -157,9 +158,45 @@ let chartConfig = {
       ],
     },
   },
-};
+};*/
 
-const BarChart = () => {
+const BarChart = (props) => {
+  console.log("in BarChart")
+  console.log(props.pixelObject)
+  let results = props.pixelObject;
+
+  let blackBorderColor = [];
+  for (var i = 0; i < results.chartColor.length; i++)
+    blackBorderColor.push("rgb(0, 0, 0)");
+
+  let chartConfig = {
+    type: "doughnut",
+    data: {
+      labels: results.chartColor,
+      datasets: [
+        {
+          label: "Instances of this color",
+          data: results.chartCount,
+          backgroundColor: results.chartColor,
+          borderColor: blackBorderColor,
+          borderWidth: 2,
+          barThickness: 50,
+        },
+      ],
+    },
+    options: {
+      scales: {
+        yAxes: [
+          {
+            ticks: {
+              beginAtZero: true,
+            },
+          },
+        ],
+      },
+    },
+  };
+
   return (
     <div>
       <Bar
