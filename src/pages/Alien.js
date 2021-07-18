@@ -1,23 +1,29 @@
 import React from 'react'
 import BarChart from "../components/BarChart";
-import pixel_art from '../pixel_assets/alien_large.png';
+//import original from '../pixel_assets/alien/original.png';
+//import twoX from '../pixel_assets/alien/twoX.png';
+//import fourX from '../pixel_assets/alien/fourX.png';
+import eightX from '../pixel_assets/alien/eightX.png';
+//import sixteenX from '../pixel_assets/alien/sixteenX.png';
+//import thirtytwoX from '../pixel_assets/alien/thirtytwoX.png';
+//import sixtyfourX from '../pixel_assets/alien/sixtyfourX.png';
 
 function Alien() {
     let spacing = 1;
-
-    let specs = require('../pixel_assets/alien_results.json');
-    console.log(specs)
     
+    let analytics = require('../pixel_assets/alien/analytics.json');
+    //console.log(analytics)
+
     return (
         <div className='alien'>
-            <h3>Aliens vs. Predator (Arcade) - Razer Claws</h3>
+            <h3>Aliens Vs. Predator (Arcade) - RazorClaw Alien</h3>
+
             <p>
-                <img src={pixel_art} style={{marginTop: spacing + 'em'}} alt="razor" />
+                <img src={eightX} style={{marginTop: spacing + 'em'}} alt="alien" />
             </p>
-            <BarChart pixelObject={specs}/>
+            <BarChart pixelObject={analytics}/>
         </div>
     )
 }
 
-//export const SpriteProperties = specs;
 export default Alien

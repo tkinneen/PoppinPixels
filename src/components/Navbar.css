@@ -1,9 +1,21 @@
 .navbar {
     background-color: #0de7ff;
-    height: 370px;
+    /*height: 370px;*/
+    height: 200px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+}
+
+.center {
+    text-align: center;
+    left:-60px;
+    margin: auto;
+}
+
+.nudge_left {
+    position:relative;
+    
 }
 
 /*
@@ -11,6 +23,18 @@
     purple #78517c
     orange #f17950
 */
+
+@font-face {
+    font-family: 'SNES';
+    src: local('SNES'), url(../fonts/SnesItalic-1G9Be.ttf) format('truetype');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+        'embedded-opentype', and 'svg' */
+}
+
+.snes_font {
+    font-family: SNES;
+    font-size: 12rem;
+}
 
 .menu-bars {
     margin-left: 2rem;
