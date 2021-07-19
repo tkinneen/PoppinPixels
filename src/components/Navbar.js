@@ -19,7 +19,7 @@ function Navbar() {
           <FaIcons.FaBars onClick={showSidebar} />
         </Link>
         {/*<img src={logo} style={{marginTop: 1 + 'em'}} alt="logo" />*/}
-        <p className="snes_font center ">Logo Text SNES</p>
+        <p className="snes_font center ">Pixel Examiner</p>
 
       </div>
       <nav className={sidebar ? "nav-menu active" : "nav-menu"}>

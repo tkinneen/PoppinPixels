@@ -45,7 +45,7 @@ export const SidebarData = [
   },*/
   {
     title: "Alien",
-    path: "/alien",
+    path: "/",
     icon: <FaIcons.FaFortAwesome />,
     cName: "nav-text",
   },

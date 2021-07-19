@@ -8,20 +8,12 @@
     font-weight: bold;
 }
 
-.orange {
-    color: orange;
+canvas#barChart {
+    background-color: #fff;
 }
 
-.container1 {
-    background-color: chartreuse;
-    height: 100vh;
-    width: 200vh;
-    display: grid;
-}
-
-.container2 {
-    background-color:firebrick;
-
+body {
+    background-color: #f97b55;
 }
 
 .alien,

@@ -22,6 +22,10 @@
     teal   #83D1C4
     purple #78517c
     orange #f17950
+
+    coral #f97b55
+    blue #40c6ff
+    purp #5c42a8
 */
 
 @font-face {
@@ -41,11 +45,10 @@
     font-size: 2rem;
     background: none;
     background-color: #0de7ff;
-
 }
 
 .nav-menu {
-    background-color: #0de7ff;
+    background-color: #5c42a8;
     width: 250px;
     height: 100vh;
     display: flex;
@@ -54,6 +57,8 @@
     top: 0;
     left: -100%;
     transition: 850ms;
+    overflow:scroll;
+
 }
 
 .nav-menu.active {

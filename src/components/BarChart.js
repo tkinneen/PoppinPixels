@@ -27,17 +27,24 @@ const BarChart = (props) => {
     },
     options: {
       maintainAspectRatio: false,
+      layout: {
+        padding: {
+          top: 50,
+          bottom: 50
+        }
+      },
       plugins: {
         legend: {
           display: false
       },
     },
       scales: {
-        yAxes: [
+        yAxes: 
+        [
           {
-              scaleLabel: {
-                display: true,
-                labelString: 'YEE'
+            scaleLabel: {
+              display: true,
+              labelString: 'YEE'
             }
           },
           {
@@ -46,11 +53,12 @@ const BarChart = (props) => {
             },
           },
         ],
-                xAxes: [
+        xAxes: 
+        [
           {
-              scaleLabel: {
-                display: true,
-                labelString: 'Hex Values'
+            scaleLabel: {
+              display: true,
+              labelString: 'Hex Values'
             }
           },
           {
@@ -62,6 +70,8 @@ const BarChart = (props) => {
       },
     },
   };
+  console.log("chartConfig: ")
+  console.log(chartConfig)
 
   return (
     <div>

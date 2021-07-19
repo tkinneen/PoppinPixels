@@ -4,8 +4,8 @@ import BarChart from "../components/BarChart";
 //import twoX from '../pixel_assets/jason/twoX.png';
 //import fourX from '../pixel_assets/jason/fourX.png';
 //import eightX from '../pixel_assets/jason/eightX.png';
-//import sixteenX from '../pixel_assets/jason/sixteenX.png';
-import thirtytwoX from '../pixel_assets/jason/thirtytwoX.png';
+import sixteenX from '../pixel_assets/jason/sixteenX.png';
+//import thirtytwoX from '../pixel_assets/jason/thirtytwoX.png';
 //import sixtyfourX from '../pixel_assets/jason/sixtyfourX.png';
 
 function Jason() {
@@ -18,7 +18,7 @@ function Jason() {
         <div className='jason'>
             <h3>Friday the 13th (NES) - Jason Voorhees</h3>
             <p>
-                <img src={thirtytwoX} style={{marginTop: spacing + 'em'}} alt="jason" />
+                <img src={sixteenX} style={{marginTop: spacing + 'em'}} alt="jason" />
             </p>
             <BarChart pixelObject={analytics}/>
         </div>
