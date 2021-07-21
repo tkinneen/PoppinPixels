@@ -16,9 +16,9 @@ function Jason() {
 
     return (
         <div className='jason'>
-            <h3>Friday the 13th (NES) - Jason Voorhees</h3>
+            <h3 className="goblin_font center pad_sprite_name">Friday the 13th (NES) - Jason Voorhees</h3>
             <p>
-                <img src={sixteenX} style={{marginTop: spacing + 'em'}} alt="jason" />
+                <img className="pad_image" src={sixteenX} style={{marginTop: spacing + 'em'}} alt="jason" />
             </p>
             <BarChart pixelObject={analytics}/>
         </div>

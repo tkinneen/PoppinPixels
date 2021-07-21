@@ -1,5 +1,6 @@
 import React from 'react'
 import BarChart from "../components/BarChart";
+import "../App.css";
 //import original from '../pixel_assets/mana_beast/original.png';
 //import twoX from '../pixel_assets/mana_beast/twoX.png';
 //import fourX from '../pixel_assets/mana_beast/fourX.png';
@@ -18,10 +19,10 @@ function Mana_Beast() {
 
     return (
         <div className='mana_beast'>
-            <h3>Secret of Mana (SNES) - Mana Beast</h3>
+            <h3 className="goblin_font center pad_sprite_name">Secret of Mana (SNES) - Mana Beast</h3>
 
             <p>
-                <img src={sixteenX} style={{marginTop: spacing + 'em'}} alt="mana_beast" />
+                <img className="pad_image" src={sixteenX} style={{marginTop: spacing + 'em'}} alt="mana_beast" />
             </p>
             <BarChart pixelObject={analytics}/>
         </div>

@@ -16,10 +16,10 @@ function Zombie() {
 
     return (
         <div className='zombie'>
-            <h3>Marvel Vs. Capcom 2 (Arcade) - Zombie</h3>
+            <h3 className="goblin_font center pad_sprite_name">Marvel Vs. Capcom 2 (Arcade) - Zombie</h3>
 
             <p>
-                <img src={sixteenX} style={{marginTop: spacing + 'em'}} alt="zombie" />
+                <img className="pad_image" src={sixteenX} style={{marginTop: spacing + 'em'}} alt="zombie" />
             </p>
             <BarChart pixelObject={analytics}/>
         </div>

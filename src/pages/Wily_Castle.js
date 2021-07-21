@@ -18,10 +18,10 @@ function Wily_Castle() {
 
     return (
         <div className='wily_castle'>
-            <h3>Mega Man 2 (NES) - Dr. Wily's Castle</h3>
+            <h3 className="goblin_font center pad_sprite_name">Mega Man 2 (NES) - Dr. Wily's Castle</h3>
 
             <p>
-                <img src={eightX} style={{marginTop: spacing + 'em'}} alt="wily_castle" />
+                <img className="pad_image" src={eightX} style={{marginTop: spacing + 'em'}} alt="wily_castle" />
             </p>
             <BarChart pixelObject={analytics}/>
         </div>

@@ -16,10 +16,10 @@ function Walker() {
 
     return (
         <div className='walker'>
-            <h3>Mega Man 2 (NES) - Walker</h3>
+            <h3 className="goblin_font center pad_sprite_name">Mega Man 2 (NES) - Walker</h3>
 
             <p>
-                <img src={sixteenX} style={{marginTop: spacing + 'em'}} alt="walker" />
+                <img className="pad_image" src={sixteenX} style={{marginTop: spacing + 'em'}} alt="walker" />
             </p>
             <BarChart pixelObject={analytics}/>
         </div>

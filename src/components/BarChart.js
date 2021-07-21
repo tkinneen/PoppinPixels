@@ -27,6 +27,7 @@ const BarChart = (props) => {
     },
     options: {
       maintainAspectRatio: false,
+      backgroundColor: "#dadada",
       layout: {
         padding: {
           top: 50,

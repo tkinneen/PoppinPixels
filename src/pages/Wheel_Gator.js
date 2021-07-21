@@ -18,10 +18,10 @@ function Wheel_Gator() {
 
     return (
         <div className='wheel_gator'>
-            <h3>Mega Man X 2 (SNES) - Wheel Gator</h3>
+            <h3 className="goblin_font center pad_sprite_name">Mega Man X 2 (SNES) - Wheel Gator</h3>
 
             <p>
-                <img src={sixteenX} style={{marginTop: spacing + 'em'}} alt="wheel_gator" />
+                <img className="pad_image" src={sixteenX} style={{marginTop: spacing + 'em'}} alt="wheel_gator" />
             </p>
             <BarChart pixelObject={analytics}/>
         </div>

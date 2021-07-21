@@ -18,10 +18,10 @@ function Samus_Aran() {
 
     return (
         <div className='samus_aran'>
-            <h3>Metroid Fusion (GBA) - Samus Aran (Varia Armor)</h3>
+            <h3 className="goblin_font center pad_sprite_name">Metroid Fusion (GBA) - Samus Aran (Varia Armor)</h3>
 
             <p>
-                <img src={thirtytwoX} style={{marginTop: spacing + 'em'}} alt="samus_aran" />
+                <img className="pad_image" src={thirtytwoX} style={{marginTop: spacing + 'em'}} alt="samus_aran" />
             </p>
             <BarChart pixelObject={analytics}/>
         </div>

@@ -8,12 +8,8 @@
     font-weight: bold;
 }
 
-canvas#barChart {
-    background-color: #fff;
-}
-
 body {
-    background-color: #f97b55;
+    background-color: #0de7ff;
 }
 
 .alien,
@@ -37,4 +33,60 @@ body {
     justify-content: center;
     float: left;
     font-size: 3rem;
+}
+
+.pad_sprite_name {
+    padding-top: 1em;
+    padding-left: 6em;
+}
+
+.pad_image {
+    padding-left: 6em;
+}
+
+.center {
+    text-align: center;
+    margin: auto;
+    padding-left: 100;
+}
+
+.nudge_left {
+    position:relative; 
+}
+
+@font-face {
+    font-family: 'SNES';
+    src: local('SNES'), url(./fonts/SnesItalic-1G9Be.ttf) format('truetype');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+        'embedded-opentype', and 'svg' */
+}
+
+@font-face {
+    font-family: 'goblin';
+    src: local('goblin'), url(./fonts/AGoblinAppears-o2aV.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'mana';
+    src: local('mana'), url(./fonts/ManaspaceRegular-ZJwZ.ttf) format('truetype');
+}
+
+.snes_font {
+    font-family: SNES;
+    font-size: 12rem;
+    color: #000;
+}
+
+.goblin_font {
+    font-family: goblin;
+    font-size: 3rem;
+}
+
+.mana_font {
+    font-family: mana;
+    font-size: 6rem;
+}
+
+.chart-container {
+    background-color: #dadada;
 }

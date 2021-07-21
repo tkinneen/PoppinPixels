@@ -1,5 +1,6 @@
 import React from 'react'
 import BarChart from "../components/BarChart";
+import "../App.css";
 //import original from '../pixel_assets/alien/original.png';
 //import twoX from '../pixel_assets/alien/twoX.png';
 //import fourX from '../pixel_assets/alien/fourX.png';
@@ -16,11 +17,12 @@ function Alien() {
 
     return (
         <div className='alien'>
-            <h3>Aliens Vs. Predator (Arcade) - RazorClaw Alien</h3>
+            <h3 className="goblin_font center pad_sprite_name">Aliens Vs. Predator (Arcade) - RazorClaw Alien</h3>
 
             <p>
-                <img src={eightX} style={{marginTop: spacing + 'em'}} alt="alien" />
+                <img className="pad_image" src={eightX} style={{marginTop: spacing + 'em'}} alt="alien" />
             </p>
+
             <BarChart pixelObject={analytics}/>
         </div>
     )

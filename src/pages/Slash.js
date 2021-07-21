@@ -18,10 +18,10 @@ function Slash() {
 
     return (
         <div className='slash'>
-            <h3>Teenage Mutant Ninja Turtles 4: Turtles In Time (Arcade) - Slash</h3>
+            <h3 className="goblin_font center pad_sprite_name">Teenage Mutant Ninja Turtles 4: Turtles In Time (Arcade) - Slash</h3>
 
             <p>
-                <img src={sixteenX} style={{marginTop: spacing + 'em'}} alt="slash" />
+                <img className="pad_image" src={sixteenX} style={{marginTop: spacing + 'em'}} alt="slash" />
             </p>
             <BarChart pixelObject={analytics}/>
         </div>

@@ -18,10 +18,10 @@ function Ecto_One() {
 
     return (
         <div className='ecto_one'>
-            <h3>Ghostbusters (Genesis) - Ecto-1</h3>
+            <h3 className="goblin_font center pad_sprite_name">Ghostbusters (Genesis) - Ecto-1</h3>
 
             <p>
-                <img src={eightX} style={{marginTop: spacing + 'em'}} alt="ecto_one" />
+                <img className="pad_image" src={eightX} style={{marginTop: spacing + 'em'}} alt="ecto_one" />
             </p>
             <BarChart pixelObject={analytics}/>
         </div>

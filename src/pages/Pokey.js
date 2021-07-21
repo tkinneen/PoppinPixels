@@ -18,13 +18,10 @@ function Pokey() {
 
     return (
         <div className='pokey'>
-            <p>Super Mario 64 (N64) - Pokey
-            <img src={original} style={{marginTop: spacing + 'em'}} alt="pokey_orig" /></p>
-
-
+            <h3 className="goblin_font center pad_sprite_name">Super Mario 64 (N64) - Pokey</h3>
+        
             <p>
-
-                <img src={eightX} style={{marginTop: spacing + 'em'}} alt="pokey" />
+                <img className="pad_image" src={eightX} style={{marginTop: spacing + 'em'}} alt="pokey" />
             </p>
             <BarChart pixelObject={analytics}/>
         </div>
