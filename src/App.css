@@ -37,11 +37,15 @@ body {
 
 .pad_sprite_name {
     padding-top: 1em;
-    padding-left: 6em;
+    padding-left: 8em;
 }
 
 .pad_image {
-    padding-left: 6em;
+    padding-left: 8em;
+}
+
+.pad_chart {
+    padding-left: 8em;
 }
 
 .center {
@@ -82,6 +86,11 @@ body {
     font-size: 3rem;
 }
 
+.goblin_font_sidebar {
+    font-family: goblin;
+    font-size: 1rem;
+}
+
 .mana_font {
     font-family: mana;
     font-size: 6rem;
@@ -89,4 +98,48 @@ body {
 
 .chart-container {
     background-color: #dadada;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+}
+
+.dropdown {
+    width: 400px;
+    margin: 100px auto;
+    position: relative;
+}
+
+.dropdown .dropdown-content {
+    position: absolute;
+    top: 110%;
+    left: 0;
+    padding: 10px;
+    background: #fff;
+    box-shadow: 3px 3px 10px 6px rgba(0, 0, 0, 0.06);
+    font-weight: 500;
+    color: #333;
+    width: 95%;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(transparent, #f97b55);
+    border-radius: 6px;
+}
+
+.chart_background_gray {
+    background-color: #dadada;
+}
+
+.chart_background_blue {
+    background-color: #8ac5ff;
+}
+
+.chart_background_green {
+    background-color: #ddf482;
 }

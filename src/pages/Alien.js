@@ -1,4 +1,5 @@
 import React from 'react'
+//import Dropdown from "../components/Dropdown";
 import BarChart from "../components/BarChart";
 import "../App.css";
 //import original from '../pixel_assets/alien/original.png';
@@ -14,16 +15,19 @@ function Alien() {
     
     let analytics = require('../pixel_assets/alien/analytics.json');
     //console.log(analytics)
+  //          {/*<h3 className="goblin_font center pad_sprite_name">Aliens Vs. Predator (Arcade) - RazorClaw Alien</h3>*/}
 
     return (
         <div className='alien'>
-            <h3 className="goblin_font center pad_sprite_name">Aliens Vs. Predator (Arcade) - RazorClaw Alien</h3>
-
+            <p className="goblin_font center pad_sprite_name">Aliens Vs. Predator (Arcade) - RazorClaw Alien</p>
             <p>
                 <img className="pad_image" src={eightX} style={{marginTop: spacing + 'em'}} alt="alien" />
             </p>
+            <p className="goblin_font center pad_sprite_name">Analytics: Distribution of uniquely colored pixels in sprite</p>
 
-            <BarChart pixelObject={analytics}/>
+            <div className="chartBackground pad_chart">
+                <BarChart pixelObject={analytics}/>
+            </div>
         </div>
     )
 }

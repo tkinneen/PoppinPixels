@@ -1,6 +1,6 @@
 import React from 'react'
 import BarChart from "../components/BarChart";
-import original from '../pixel_assets/pokey/original.png';
+//import original from '../pixel_assets/pokey/original.png';
 //import twoX from '../pixel_assets/pokey/twoX.png';
 //import fourX from '../pixel_assets/pokey/fourX.png';
 import eightX from '../pixel_assets/pokey/eightX.png';

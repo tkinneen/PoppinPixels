@@ -23,7 +23,9 @@ function Samus_Aran() {
             <p>
                 <img className="pad_image" src={thirtytwoX} style={{marginTop: spacing + 'em'}} alt="samus_aran" />
             </p>
-            <BarChart pixelObject={analytics}/>
+            <div className="chartBackground pad_chart">
+                <BarChart pixelObject={analytics}/>
+            </div>
         </div>
     )
 }
