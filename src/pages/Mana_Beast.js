@@ -23,7 +23,7 @@ function Mana_Beast() {
             <p>
                 <img className="pad_image" src={sixteenX} style={{marginTop: spacing + 'em'}} alt="mana_beast" />
             </p>
-            <p className="goblin_font center pad_sprite_name">Analytics: Distribution of uniquely colored pixels in sprite</p>
+            <p className="goblin_font center pad_chart_label">Analytics: Distribution of uniquely colored pixels in sprite</p>
 
             <div className="chartBackground pad_chart">
                 <BarChart pixelObject={analytics}/>
