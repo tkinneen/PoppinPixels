@@ -40,6 +40,12 @@ body {
     padding-left: 8em;
 }
 
+.pad_chart_label {
+    padding-top: 1em;
+    padding-left: 8em;
+    padding-bottom: 1em;
+}
+
 .pad_image {
     padding-left: 8em;
 }
@@ -52,6 +58,7 @@ body {
     text-align: center;
     margin: auto;
     padding-left: 100;
+    padding-top: -50px;
 }
 
 .nudge_left {
@@ -142,4 +149,8 @@ body {
 
 .chart_background_green {
     background-color: #ddf482;
+}
+
+.chart_background_black {
+    background-color: #000000;
 }

@@ -92,3 +92,13 @@
 span {
     margin-left: 16px;
 }
+
+.logo_pad {
+    position: relative;
+    padding-top: 60px;
+}
+
+.logo_text_pad {
+    position: relative;
+    top: -55px; /* This will move it 20px up */
+}

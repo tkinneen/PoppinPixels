@@ -18,12 +18,15 @@ function Fire_Mario() {
 
     return (
         <div className='fire_mario'>
-            <h3 className="goblin_font center pad_sprite_name">Super Mario Bros. 3 (NES) - Fire Mario</h3>
-
+            <p className="goblin_font pad_sprite_name">Fire Mario - Super Mario Bros. 3 (NES)</p>
             <p>
                 <img className="pad_image" src={thirtytwoX} style={{marginTop: spacing + 'em'}} alt="fire_mario" />
             </p>
-            <BarChart pixelObject={analytics}/>
+            <p className="goblin_font center pad_chart_label">Analytics: Distribution of uniquely colored pixels in sprite</p>
+
+            <div className="chartBackground pad_chart">
+                <BarChart pixelObject={analytics}/>
+            </div>
         </div>
     )
 }

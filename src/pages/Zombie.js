@@ -16,12 +16,15 @@ function Zombie() {
 
     return (
         <div className='zombie'>
-            <h3 className="goblin_font center pad_sprite_name">Marvel Vs. Capcom 2 (Arcade) - Zombie</h3>
-
+            <p className="goblin_font pad_sprite_name">Zombie - Marvel Vs. Capcom 2  [Arcade]</p>
             <p>
                 <img className="pad_image" src={sixteenX} style={{marginTop: spacing + 'em'}} alt="zombie" />
             </p>
-            <BarChart pixelObject={analytics}/>
+            <p className="goblin_font center pad_sprite_name">Analytics: Distribution of uniquely colored pixels in sprite</p>
+
+            <div className="chartBackground pad_chart">
+                <BarChart pixelObject={analytics}/>
+            </div>
         </div>
     )
 }

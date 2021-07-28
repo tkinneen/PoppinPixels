@@ -6,6 +6,7 @@ import { SidebarData } from "./SidebarData";
 import './Navbar.css';
 import { IconContext } from 'react-icons'
 //import logo from '../pixel_assets/pixel_inspector.png';
+import logo from '../pixel_assets/examiner.png';
 
 function Navbar() {
   const [sidebar, setSidebar] = useState(false);
@@ -19,7 +20,8 @@ function Navbar() {
           <FaIcons.FaBars onClick={showSidebar} />
         </Link>
         {/*<img src={logo} style={{marginTop: 1 + 'em'}} alt="logo" />*/}
-        <p className="snes_font center ">Pixel Examiner</p>
+        <p className="snes_font center logo_text_pad">Pixel Examiner <img src={logo} className="logo_pad" alt="logo" /></p>
+        
 
       </div>
       <nav className={sidebar ? "nav-menu active" : "nav-menu"}>

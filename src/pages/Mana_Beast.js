@@ -19,12 +19,15 @@ function Mana_Beast() {
 
     return (
         <div className='mana_beast'>
-            <h3 className="goblin_font center pad_sprite_name">Secret of Mana (SNES) - Mana Beast</h3>
-
+            <p className="goblin_font pad_sprite_name">Mana Beast - Secret of Mana [SNES]</p>
             <p>
                 <img className="pad_image" src={sixteenX} style={{marginTop: spacing + 'em'}} alt="mana_beast" />
             </p>
-            <BarChart pixelObject={analytics}/>
+            <p className="goblin_font center pad_sprite_name">Analytics: Distribution of uniquely colored pixels in sprite</p>
+
+            <div className="chartBackground pad_chart">
+                <BarChart pixelObject={analytics}/>
+            </div>
         </div>
     )
 }

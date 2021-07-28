@@ -16,11 +16,15 @@ function Jason() {
 
     return (
         <div className='jason'>
-            <h3 className="goblin_font center pad_sprite_name">Friday the 13th (NES) - Jason Voorhees</h3>
+            <p className="goblin_font pad_sprite_name">Friday the 13th (NES) - Jason Voorhees</p>
             <p>
                 <img className="pad_image" src={sixteenX} style={{marginTop: spacing + 'em'}} alt="jason" />
             </p>
-            <BarChart pixelObject={analytics}/>
+            <p className="goblin_font center pad_sprite_name">Analytics: Distribution of uniquely colored pixels in sprite</p>
+
+            <div className="chartBackground pad_chart">
+                <BarChart pixelObject={analytics}/>
+            </div>
         </div>
     )
 }

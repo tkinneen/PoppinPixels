@@ -18,12 +18,15 @@ function Wily_Castle() {
 
     return (
         <div className='wily_castle'>
-            <h3 className="goblin_font center pad_sprite_name">Mega Man 2 (NES) - Dr. Wily's Castle</h3>
-
+            <p className="goblin_font pad_sprite_name">Dr. Wily's Castle - Mega Man 2 [NES]</p>
             <p>
                 <img className="pad_image" src={eightX} style={{marginTop: spacing + 'em'}} alt="wily_castle" />
             </p>
-            <BarChart pixelObject={analytics}/>
+            <p className="goblin_font center pad_sprite_name">Analytics: Distribution of uniquely colored pixels in sprite</p>
+
+            <div className="chartBackground pad_chart">
+                <BarChart pixelObject={analytics}/>
+            </div>
         </div>
     )
 }

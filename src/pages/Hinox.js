@@ -18,12 +18,15 @@ function Hinox() {
 
     return (
         <div className='hinox'>
-            <h3 className="goblin_font center pad_sprite_name">Legend of Zelda: Link's Awakening (GameBoy) - Hinox</h3>
-
+            <p className="goblin_font pad_sprite_name">Hinox - Legend of Zelda: Link's Awakening [GameBoy]</p>
             <p>
                 <img className="pad_image" src={thirtytwoX} style={{marginTop: spacing + 'em'}} alt="hinox" />
             </p>
-            <BarChart pixelObject={analytics}/>
+            <p className="goblin_font center pad_sprite_name">Analytics: Distribution of uniquely colored pixels in sprite</p>
+
+            <div className="chartBackground pad_chart">
+                <BarChart pixelObject={analytics}/>
+            </div>
         </div>
     )
 }

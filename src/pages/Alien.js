@@ -19,11 +19,11 @@ function Alien() {
 
     return (
         <div className='alien'>
-            <p className="goblin_font center pad_sprite_name">Aliens Vs. Predator (Arcade) - RazorClaw Alien</p>
+            <p className="goblin_font pad_sprite_name">RazorClaw Alien - Aliens Vs. Predator [Arcade]</p>
             <p>
                 <img className="pad_image" src={eightX} style={{marginTop: spacing + 'em'}} alt="alien" />
             </p>
-            <p className="goblin_font center pad_sprite_name">Analytics: Distribution of uniquely colored pixels in sprite</p>
+            <p className="goblin_font center pad_chart_label">Analytics: Distribution of uniquely colored pixels in sprite</p>
 
             <div className="chartBackground pad_chart">
                 <BarChart pixelObject={analytics}/>

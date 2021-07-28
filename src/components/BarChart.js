@@ -1,12 +1,12 @@
 import React from "react";
-import { Bar, Pie } from "react-chartjs-2";
+import { Bar } from "react-chartjs-2";
 //import { Pie } from "react-chartjs-2";
 
 const BarChart = (props) => {
   
   let results = props.pixelObject;
 
-  // 
+  // Pack an array of values for the bar borders
   let blackBorderColor = [];
   for (var i = 0; i < results.chartColor.length; i++)
     blackBorderColor.push("rgb(0, 0, 0)");
@@ -28,6 +28,58 @@ const BarChart = (props) => {
       ],
     },
     options: {
+    responsive: false,
+    scales: {
+      xAxes: [{
+        ticks: {
+          maxRotation: 90,
+          minRotation: 80
+        },
+        scaleLabel: {
+        display: true,
+        labelString: 'OKAY'
+        }
+      }],
+      yAxes: [{
+        ticks: {
+          beginAtZero: true
+        },
+        scaleLabel: {
+        display: true,
+        labelString: 'OKAY'
+        }
+      }]
+    }
+  }
+  };
+
+  console.log("chartConfig: ")
+  console.log(chartConfig)
+  console.log(chartConfig.data.datasets[0].data)
+
+  console.log("chartConfig.backgroundColor")
+  console.log(chartConfig.backgroundColor)
+
+  // Match background color of chart to background color of sprite
+  let background = "";
+  if(chartConfig.backgroundColor === "#dadada")
+    background = "chart_background_gray";
+  else if(chartConfig.backgroundColor === "#ddf482")
+    background = "chart_background_green";
+  else if(chartConfig.backgroundColor === "#8ac5ff") 
+    background = "chart_background_blue";
+  else if(chartConfig.backgroundColor === "#0070ec") 
+    background = "chart_background_black";
+
+  return (
+
+    <div className={background}>
+
+      <Bar
+        data={chartConfig.data}
+        height={400}
+        width={600}
+        options={{
       maintainAspectRatio: false,
       backgroundColor: "#dadada",
       layout: {
@@ -78,68 +130,8 @@ const BarChart = (props) => {
           }   
         ]
       }
-    }
-  };
-
-  let chartOptions = {
-    scales: {
-        yAxes: [{
-            display: true,
-            ticks: 
-            {
-                suggestedMin: 0,    // minimum will be 0, unless there is a lower value.
-                beginAtZero: true   // minimum value will be 0.
-            },
-            gridLines: 
-            {
-              display: false,
-              color: "black"
-            },
-            scaleLabel: 
-            {
-              display: true,
-              labelString: "Time in Seconds",
-              fontColor: "red"
-            }
-        }]
-    }
-};
-  console.log("chartConfig: ")
-  console.log(chartConfig)
-
-  let background = "";
-
-  if(chartConfig.backgroundColor === "#dadada")
-  {
-    background = "chart_background_gray";
-    //background = 'background-color:' +  chartConfig.backgroundColor;
-    //<div style="background-color:red"> </div>
-  } 
-  else if(chartConfig.backgroundColor === "#ddf482")
-  {
-    background = "chart_background_green";
-    //background = '"background-color:' + chartConfig.backgroundColor + '"';
-    
-
-  } 
-  else if(chartConfig.backgroundColor === "#8ac5ff") 
-  {
-    background = "chart_background_blue";
-    //background = '"background-color:' + chartConfig.backgroundColor + '"';
-    //<div className={background}>
-
-  }
-
-  return (
-
-    <div className={background}>
-
-      <Bar
-        data={chartConfig.data}
-        height={400}
-        width={600}
-        options={chartConfig.options}
-
+    }}
+        
         /*options={{maintainAspectRatio: false}}*/
       />
     </div>

@@ -18,12 +18,15 @@ function Venom() {
 
     return (
         <div className='venom'>
-            <h3 className="goblin_font center pad_sprite_name">Marvel Vs. Capcom (Arcade) - Venom</h3>
-
+            <p className="goblin_font pad_sprite_name">Venom - Marvel Vs. Capcom (Arcade)</p>
             <p>
                 <img className="pad_image" src={sixteenX} style={{marginTop: spacing + 'em'}} alt="venom" />
             </p>
-            <BarChart pixelObject={analytics}/>
+            <p className="goblin_font center pad_sprite_name">Analytics: Distribution of uniquely colored pixels in sprite</p>
+
+            <div className="chartBackground pad_chart">
+                <BarChart pixelObject={analytics}/>
+            </div>
         </div>
     )
 }
