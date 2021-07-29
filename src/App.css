@@ -152,5 +152,9 @@ body {
 }
 
 .chart_background_black {
-    background-color: #000000;
+    background-color: #dadada;
+}
+
+.spacer_color {
+    color: #0de7ff;
 }

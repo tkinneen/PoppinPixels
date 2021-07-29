@@ -27,6 +27,7 @@ function Wheel_Gator() {
             <div className="chartBackground pad_chart">
                 <BarChart pixelObject={analytics}/>
             </div>
+            <p className="spacer_color">_</p>
         </div>
     )
 }

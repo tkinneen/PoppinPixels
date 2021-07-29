@@ -3,6 +3,9 @@ import { Bar } from "react-chartjs-2";
 //import { Pie } from "react-chartjs-2";
 
 const BarChart = (props) => {
+
+  // goes under datasets array
+  //barThickness: 100,
   
   let results = props.pixelObject;
 
@@ -22,8 +25,7 @@ const BarChart = (props) => {
           data: results.chartCount,
           backgroundColor: results.chartColor,
           borderColor: blackBorderColor,
-          borderWidth: 2,
-          barThickness: 100,
+          borderWidth: 2
         },
       ],
     },
@@ -55,10 +57,9 @@ const BarChart = (props) => {
 
   console.log("chartConfig: ")
   console.log(chartConfig)
+  
+  console.log(chartConfig.data.labels)
   console.log(chartConfig.data.datasets[0].data)
-
-  console.log("chartConfig.backgroundColor")
-  console.log(chartConfig.backgroundColor)
 
   // Match background color of chart to background color of sprite
   let background = "";
@@ -77,8 +78,9 @@ const BarChart = (props) => {
 
       <Bar
         data={chartConfig.data}
-        height={400}
+        height={700}
         width={600}
+        options={chartConfig.options}
         options={{
       maintainAspectRatio: false,
       backgroundColor: "#dadada",
