@@ -9,7 +9,7 @@ The site also allows you to view the color distribution and pixel counts of each
 - Ability to switch resolutions on the fly, stepped anywhere from the original resoution up to 64x
 - Usernames and SQLite integration to be able to store custom uploaded sprites on the server
 
-##Simply navigate to pixelexaminer.com in your browser, or if you want to play with the site's codebase:
+## Simply navigate to pixelexaminer.com in your browser, or if you want to play with the site's codebase:
 - Ensure you have node.js / npm installed
 - Pull the repository and cd into it
 - Run the command "npm install" to download all dependencies
