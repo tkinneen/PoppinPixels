@@ -1,6 +1,6 @@
-## Poppin' Pixels,
-### or
-## pixelexaminer.com
+### Poppin' Pixels,
+#### or
+### pixelexaminer.com
 
 A site that allows you to view graphical sprite assets from classic videogames, scaled for optimal viewing on modern displays.
 
