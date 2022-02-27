@@ -4,7 +4,7 @@
 
 A site that allows you to view graphical sprite assets from classic videogames, scaled for optimal viewing on modern displays.
 
-It also allows you to view the color distribution and color pixel counts of each sprite as a chart.js graph.
+It also allows you to view the color distribution and pixel color counts of each sprite in a chart.js graph that can be switched on the fly.
 
 ### Upcoming features:
 - Ability to upload and analize your own graphical sprite assets
